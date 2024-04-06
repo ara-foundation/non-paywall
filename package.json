@@ -1,0 +1,29 @@
+{
+  "name": "non-paywall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ara-foundation/non-paywall.git"
+  },
+  "author": "Medet Ahmetson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ara-foundation/non-paywall/issues"
+  },
+  "homepage": "https://github.com/ara-foundation/non-paywall#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.5",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
