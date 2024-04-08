@@ -1,6 +1,7 @@
 import * as url from "url";
 import express, { Express, Request, Response } from "express";
 import fs from "fs";
+import cors from "cors";
 
 type PaymentInfo = {
     endTime: number;
@@ -45,21 +46,11 @@ function getRandomInt(max: number) {
 // ??? how to identify the bot: we pass the impl and issue every time. to the client.
 // we also have an implementation that tests the implementation.
 
-// 3.
-// create a new issue for the no-paywall-news that charges 5 dollars per 10 minutes
-
 // 1
 // in the constructor, we have a message system that sends an error to the client.
 // if message "402" received, then SenSever appears next to the web page.
 // he asks for the payment and then creates a transaction.
 // the created transaction is added to the file.
-
-// 2.
-// add a button to look at the payment
-
-// 4.
-// camera is free fly in HyperPayment
-// camera is no-fly when checking the HyperPayment info
 
 const nonPaywalls = [
     "ft.com",
@@ -88,6 +79,8 @@ const payPassUrl = (webUrl: string): string => {
 
 const app: Express = express();
 const port = process.env.PORT || 3000;
+
+app.use(cors());
 
 app.get("/", (req: Request, res: Response) => {
     res.send("Express + TypeScript Server");
