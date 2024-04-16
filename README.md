@@ -6,11 +6,6 @@ npx tsx src/index.ts
 
 # API
 
-To pay:
-```
-http://localhost:3000/pay/medet
-```
-
 To validate:
 ```
 http://localhost:3000/validate/medet/https%3A%2F%2Fwww.economist.com%2Fscience-and-technology%2F2024%2F04%2F02%2Fa-stealth-attack-came-close-to-compromising-the-worlds-computers
